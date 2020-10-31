@@ -1,0 +1,17 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios-simulator
+install-name:          "/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _HKHRHeartHealthBundle, _HKHeartRateLocalizedString,
+                            _HKHeartRatePluginIdentifier,
+                            __HKHeartRateSettingsLocalizationTable,
+                            __HKHeartSettingsBradycardiaThresholdHeartRateDefault,
+                            __HKHeartSettingsBradycardiaThresholdNumberOfMinutes,
+                            __HKHeartSettingsTachycardiaThresholdHeartRateDefault,
+                            __HKHeartSettingsTachycardiaThresholdNumberOfMinutes ]
+    objc-classes:         [ __HKHeartSettingsUtilities ]
+...

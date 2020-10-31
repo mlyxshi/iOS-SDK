@@ -1,0 +1,55 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          "/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _kHLPowerLogActionConnected,
+                            _kHLPowerLogActionDisconnected,
+                            _kHLPowerLogActionKey, _kHLPowerLogActionStartActive,
+                            _kHLPowerLogActionStartPassive,
+                            _kHLPowerLogActionStopUpdates,
+                            _kHLPowerLogBundleIdentifierKey, _kHLPowerLogEvent,
+                            _kHLPowerLogPIDKey ]
+    objc-classes:         [ _HDHRDailyHeartRateManager,
+                            _HDHRHealthLiteDataCollector,
+                            _HDHRNotificationManager,
+                            _HDHeartRateProfileExtension ]
+    objc-ivars:           [ _HDHRDailyHeartRateManager._activityCacheManager,
+                            _HDHRDailyHeartRateManager._profile,
+                            _HDHRDailyHeartRateManager._queue,
+                            _HDHRDailyHeartRateManager._restingHeartRateByActivityCacheIndex,
+                            _HDHRDailyHeartRateManager._walkingAverageHeartRateByActivityCacheIndex,
+                            _HDHRHealthLiteDataCollector._bradycardiaAggregator,
+                            _HDHRHealthLiteDataCollector._bradycardiaCollectionConfiguration,
+                            _HDHRHealthLiteDataCollector._bradycardiaCollectionState,
+                            _HDHRHealthLiteDataCollector._catherineFeeder,
+                            _HDHRHealthLiteDataCollector._heartRateAggregator,
+                            _HDHRHealthLiteDataCollector._heartRateCollectionConfiguration,
+                            _HDHRHealthLiteDataCollector._heartRateCollectionState,
+                            _HDHRHealthLiteDataCollector._heartRateEnabledInPrivacy,
+                            _HDHRHealthLiteDataCollector._heartRateVariabilityCollectionConfiguration,
+                            _HDHRHealthLiteDataCollector._heartRateVariabilityCollectionState,
+                            _HDHRHealthLiteDataCollector._heartRateVariabilityDataAggregator,
+                            _HDHRHealthLiteDataCollector._heartbeatSequenceAggregator,
+                            _HDHRHealthLiteDataCollector._heartbeatSequenceCollectionConfiguration,
+                            _HDHRHealthLiteDataCollector._heartbeatSequenceCollectionState,
+                            _HDHRHealthLiteDataCollector._localDeviceEntity,
+                            _HDHRHealthLiteDataCollector._powerSavingModeNotificationToken,
+                            _HDHRHealthLiteDataCollector._privacyPreferencesNotificationToken,
+                            _HDHRHealthLiteDataCollector._profile,
+                            _HDHRHealthLiteDataCollector._queue,
+                            _HDHRHealthLiteDataCollector._tachycardiaAggregator,
+                            _HDHRHealthLiteDataCollector._tachycardiaCollectionConfiguration,
+                            _HDHRHealthLiteDataCollector._tachycardiaCollectionState,
+                            _HDHRNotificationManager._fakingNotifyTokens,
+                            _HDHRNotificationManager._profile,
+                            _HDHRNotificationManager._queue,
+                            _HDHeartRateProfileExtension._dailyHeartRateManager,
+                            _HDHeartRateProfileExtension._featureAvailabilityManager,
+                            _HDHeartRateProfileExtension._healthLiteDataCollector,
+                            _HDHeartRateProfileExtension._heartRateNotificationManager,
+                            _HDHeartRateProfileExtension._profile ]
+...

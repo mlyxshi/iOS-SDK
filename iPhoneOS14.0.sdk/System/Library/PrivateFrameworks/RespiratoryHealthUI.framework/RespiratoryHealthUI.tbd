@@ -1,0 +1,13 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios-simulator
+install-name:          "/System/Library/PrivateFrameworks/RespiratoryHealthUI.framework/RespiratoryHealthUI"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    objc-classes:         [ _HKRPOnboardingPairViewController,
+                            _HKRPOnboardingSettingsViewController,
+                            _HKRPOnboardingViewControllerFactory,
+                            _HKRPWatchAppInstaller, _RespiratoryHealthHeroView ]
+...

@@ -1,0 +1,41 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          "/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction"
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable,
+                            _NINearbyObjectDirectionNotAvailable,
+                            _NINearbyObjectDirectionNotAvailable_Private,
+                            _NINearbyObjectDistanceNotAvailable,
+                            _NINearbyObjectDistanceNotAvailable_Private,
+                            _NINearbyObjectElevationNotAvailable,
+                            _NINearbyObjectQuaternionNotAvailable ]
+    objc-classes:         [ _NIConfiguration, _NIDiscoveryToken, _NILocalization,
+                            _NINearbyObject, _NINearbyPeerConfiguration,
+                            _NIPlatformInfo, _NIServerConnection, _NISession ]
+    objc-ivars:           [ _NIDiscoveryToken._rawToken,
+                            _NINearbyObject._azimuth, _NINearbyObject._direction,
+                            _NINearbyObject._discoveryToken,
+                            _NINearbyObject._distance,
+                            _NINearbyObject._elevation,
+                            _NINearbyObject._quaternion,
+                            _NINearbyPeerConfiguration._peerDiscoveryToken,
+                            _NIServerConnection._assertion,
+                            _NIServerConnection._connection,
+                            _NIServerConnection._exportedObject,
+                            _NIServerConnection._queue,
+                            _NIServerConnection._sessionID,
+                            _NISession._activationResponse,
+                            _NISession._connection,
+                            _NISession._currentConfiguration,
+                            _NISession._delegate, _NISession._delegateQueue,
+                            _NISession._duration, _NISession._internalID,
+                            _NISession._internalState, _NISession._interruptions,
+                            _NISession._invalidationError, _NISession._log,
+                            _NISession._mutex, _NISession._queue,
+                            _NISession._readyForCallbacks, _NISession._startTime,
+                            _NISession._updatedNearbyObjects ]
+...

@@ -1,0 +1,36 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          "/System/Library/Frameworks/UserNotificationsUI.framework/UserNotificationsUI"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _UNAppLaunchOriginContentExtension, _UNLogExtensions,
+                            _UNRegisterUserNotificationsUILogging,
+                            _UserNotificationsUIVersionNumber,
+                            _UserNotificationsUIVersionString,
+                            __UNNotificationContentExtensionHostInterface,
+                            __UNNotificationContentExtensionVendorInterface,
+                            __UNNotificationExtensionActionsKey ]
+    objc-classes:         [ __UNNotificationContentExtensionHostContext,
+                            __UNNotificationContentExtensionVendorContext,
+                            __UNNotificationContentExtensionViewController,
+                            __UNNotificationContentExtensionViewControllerView ]
+    objc-ivars:           [ __UNNotificationContentExtensionHostContext._delegate,
+                            __UNNotificationContentExtensionHostContext._delegateQueue,
+                            __UNNotificationContentExtensionHostContext._delegateQueueSuspended,
+                            __UNNotificationContentExtensionHostContext._playPauseMediaButtonColor,
+                            __UNNotificationContentExtensionHostContext._playPauseMediaButtonFrame,
+                            __UNNotificationContentExtensionHostContext._playPauseMediaButtonType,
+                            __UNNotificationContentExtensionHostContext._wantsToBecomeFirstResponder,
+                            __UNNotificationContentExtensionHostContext._wantsToReceiveActionResponses,
+                            __UNNotificationContentExtensionVendorContext._didCheckActionResponseDelegate,
+                            __UNNotificationContentExtensionVendorContext._notificationActions,
+                            __UNNotificationContentExtensionVendorContext._notificationExtensionContainer,
+                            __UNNotificationContentExtensionVendorContext._queue,
+                            __UNNotificationContentExtensionVendorContext._queueInactive,
+                            __UNNotificationContentExtensionViewController._extensionViewController,
+                            __UNNotificationContentExtensionViewController._invalidationOnceFlag,
+                            __UNNotificationContentExtensionViewController._touchDelayGestureRecognizer ]
+...

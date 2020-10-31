@@ -1,0 +1,42 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          "/System/Library/PrivateFrameworks/BrookDataCollection.framework/BrookDataCollection"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _BrookDataCollectionVersionNumber,
+                            _BrookDataCollectionVersionString,
+                            _NSStringFromDataCollectionAuthorization,
+                            __BRKHandleForUploadNotification ]
+    objc-classes:         [ _BRKAccelerationBufferedFileWriter,
+                            _BRKAccelerationFileWriter, _BRKAudioFileWriter,
+                            _BRKDataCollectionBundle, _BRKDataCollectionLogger,
+                            _BRKDataCollectionScheduler, _BRKEmbeddingsWriter,
+                            _BRKLogFileWriter, _BRKMetricsLogger, _BRKWriter ]
+    objc-ivars:           [ _BRKAccelerationBufferedFileWriter._values,
+                            _BRKAccelerationFileWriter._outputStream,
+                            _BRKAudioFileWriter._audioFile,
+                            _BRKAudioFileWriter._format,
+                            _BRKDataCollectionBundle._basePath,
+                            _BRKDataCollectionBundle._folderName,
+                            _BRKDataCollectionBundle._isPackaged,
+                            _BRKDataCollectionBundle._manifest,
+                            _BRKDataCollectionBundle._writers,
+                            _BRKDataCollectionBundle._writersLock,
+                            _BRKDataCollectionLogger._authorization,
+                            _BRKDataCollectionLogger._dailyIdentifier,
+                            _BRKDataCollectionLogger._dailyIdentifierRefreshDate,
+                            _BRKDataCollectionLogger._dailySessionUploadCount,
+                            _BRKDataCollectionLogger._idsFilesList,
+                            _BRKDataCollectionLogger._lock,
+                            _BRKDataCollectionLogger._manager,
+                            _BRKDataCollectionLogger._needsAuthorizationUpdate,
+                            _BRKDataCollectionLogger._queue,
+                            _BRKDataCollectionLogger._storageDirectory,
+                            _BRKDataCollectionLogger._uploadScheduler,
+                            _BRKDataCollectionScheduler._scheduler,
+                            _BRKLogFileWriter._json, _BRKWriter._lock,
+                            _BRKWriter._path ]
+...

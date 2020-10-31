@@ -1,0 +1,12 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          "/System/Library/Frameworks/AppClip.framework/AppClip"
+current-version:       20.20
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    symbols:              [ _APActivationPayloadErrorDomain ]
+    objc-classes:         [ _APActivationPayload ]
+    objc-ivars:           [ _APActivationPayload._URL ]
+...

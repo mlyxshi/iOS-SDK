@@ -1,0 +1,17 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios-simulator
+install-name:          "/System/Library/PrivateFrameworks/PreferencesUI.framework/PreferencesUI"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    allowed-clients:      [ Preferences, PreferencesMigrator, indexSettingsApp ]
+    symbols:              [ _PSUILogForCategory ]
+    objc-classes:         [ _PSUIPasscodeLockController,
+                            _PSUIPrefsListController, _PSUIPrefsRootController ]
+    objc-ivars:           [ _PSUIPasscodeLockController._policyDictatedMaxFailedAttempts,
+                            _PSUIPasscodeLockController._voiceDialGroupSpecifier,
+                            _PSUIPasscodeLockController._voiceDialSpecifier,
+                            _PSUIPrefsRootController._rootListController ]
+...
